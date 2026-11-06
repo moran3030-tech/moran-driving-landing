@@ -1,0 +1,16 @@
+# קבצי פיתוח, עבודה מקומית וגיבוי
+moran_landing_chrome.html
+SETUP.md
+_backup_local/
+
+# קבצי מקור גולמיים וכבדים (הדף משתמש רק בקבצים המכווצים ב-assets)
+assets/_source/
+
+# קוד צד-שרת (רץ ב-Google Apps Script ואינו נדרש בדף הסטטי)
+apps_script/
+
+# קבצי מערכת הפעלה וזבל
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>מורה לנהיגה 054-623-8888 | נמאס לבקש טרמפים? קח את ההגה לידיים</title>
+  <meta name="description" content="נמאס לבקש טרמפים מההורים? קח את ההגה לידיים! חבילת נהיגה מושלמת ומבצע חבר מביא חבר. מורה לנהיגה בבאר שבע, נבטים והסביבה – 054-623-8888.">
+  <meta name="theme-color" content="#08265C">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="נמאס לבקש טרמפים מההורים? קח את ההגה לידיים!">
+  <meta property="og:description" content="חבילת נהיגה מושלמת ומבצע חבר מביא חבר (+ שיעור נסיעה). מורה לנהיגה בבאר שבע, נבטים והסביבה – 054-623-8888.">
+  <meta property="og:image" content="assets/hero_car.webp">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" as="image" href="assets/hero_car.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #08265C;
+      --navy-deep: #041433;
+      --blue: #0756B8;
+      --yellow: #FFD400;
+      --yellow-hover: #E6BE00;
+      --wa: #20B65A;
+      --white: #FFFFFF;
+      --muted: #D5DEEC;
+      --radius: 20px;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Heebo', Arial, sans-serif;
+      color: var(--white);
+      background: var(--navy-deep);
+      min-height: 100dvh;
+      line-height: 1.4;
+      padding-bottom: 76px;
+      position: relative;
+    }
+    img, svg { max-width: 100%; display: block; }
+    .bg {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: var(--navy-deep) url('assets/bg_ambient.webp') center/cover no-repeat;
+    }
+    .bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(4,20,51,.55) 0%, rgba(4,20,51,.92) 70%);
+    }
+    .page {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 440px; margin: 0 auto;
+      padding: 10px 10px 0;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; border-radius: 8px; }
+
+    /* ---------- כרטיס הפלאייר הראשי ---------- */
+    .flyer-card {
+      width: 100%;
+      background: rgba(8, 38, 92, 0.9);
+      border: 1.5px solid rgba(255, 212, 0, 0.42);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.65);
+    }
+
+    /* ---------- Hero קומפקטי ומותאם לנייד ---------- */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 215px;
+      background: var(--navy);
+      overflow: hidden;
+    }
+    .hero-bg {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 38%;
+    }
+    .hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(4,20,51,0.25) 0%,
+        rgba(4,20,51,0.05) 35%,
+        rgba(8,38,92,0.85) 74%,
+        rgba(8,38,92,1) 100%
+      );
+    }
+    .brand-floating {
+      position: absolute;
+      top: 8px; right: 10px;
+      z-index: 3;
+      width: 128px; max-width: 38%;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.95)) drop-shadow(0 2px 6px rgba(255, 255, 255, 0.75));
+    }
+    .brand-floating img {
+      width: 100%; height: auto; object-fit: contain;
+    }
+    .hero-text {
+      position: absolute; z-index: 2; inset: auto 0 0 0;
+      padding: 0 12px 8px; text-align: center;
+    }
+    .area-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: rgba(4, 20, 51, 0.88);
+      border: 1px solid rgba(255, 212, 0, 0.55);
+      color: var(--yellow);
+      font-size: 0.76rem; font-weight: 800;
+      padding: 2px 10px; border-radius: 999px;
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: clamp(1.35rem, 6vw, 1.72rem);
+      font-weight: 900; line-height: 1.15;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.9);
+    }
+    h1 .accent { color: var(--yellow); }
+
+    /* ---------- גוף הפלאייר ---------- */
+    .flyer-body {
+      padding: 6px 12px 14px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .lead-line {
+      text-align: center; font-size: 0.9rem; color: var(--muted); font-weight: 500;
+    }
+    .lead-line strong { color: var(--white); font-weight: 800; }
+
+    /* ---------- כפתורים ---------- */
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; min-height: 48px; border: 0; border-radius: 14px;
+      font: 900 1.02rem 'Heebo', Arial, sans-serif; text-decoration: none; cursor: pointer;
+      padding: 8px 12px; text-align: center;
+      transition: transform .15s ease;
+    }
+    .btn:active { transform: scale(.98); }
+    .btn-wa {
+      color: #fff; position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      box-shadow: 0 8px 20px rgba(37,211,102,.38);
+      border: 1.5px solid rgba(255,255,255,0.28);
+    }
+    .btn-yellow {
+      background: linear-gradient(135deg, #FFD400 0%, #F5B700 100%);
+      color: var(--navy);
+      box-shadow: 0 6px 18px rgba(255,212,0,.3);
+    }
+    .btn-ghost {
+      background: rgba(4, 20, 51, 0.55);
+      color: var(--yellow);
+      border: 1.5px solid rgba(255, 212, 0, 0.65);
+      min-height: 42px; font-size: 0.92rem;
+    }
+    .cta-group { display: flex; flex-direction: column; gap: 6px; }
+    .note { text-align: center; font-size: .78rem; color: var(--muted); }
+
+    /* ---------- באנר הטבות ומבצעים (2 שורות + מתנה מוגדלת) ---------- */
+    .offers {
+      border: 2px dashed var(--yellow);
+      border-radius: 16px;
+      padding: 10px 12px;
+      background: linear-gradient(135deg, rgba(255,212,0,.2) 0%, rgba(7,86,184,.45) 100%);
+    }
+    .offers-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .gift {
+      font-size: 1.85rem; width: 46px; height: 46px; flex-shrink: 0;
+      display: grid; place-items: center; border-radius: 12px;
+      background: rgba(255,212,0,.25); border: 1.5px solid var(--yellow);
+    }
+    .offers-head-txt h2 { font-size: 1.02rem; font-weight: 900; color: var(--yellow); line-height: 1.2; }
+    .offers-head-txt span { font-size: 0.76rem; color: var(--white); opacity: 0.9; }
+    .offer {
+      padding: 7px 9px;
+      border-radius: 10px;
+      background: rgba(4, 20, 51, 0.58);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 0.88rem; font-weight: 700;
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+    .offer strong { color: var(--yellow); font-weight: 900; }
+    .offer .tag-contact {
+      display: inline-block; margin-right: 4px;
+      font-size: 0.74rem; font-weight: 800; color: var(--yellow);
+      background: rgba(255, 212, 0, 0.14);
+      border: 1px solid rgba(255, 212, 0, 0.45);
+      padding: 1px 6px; border-radius: 6px;
+    }
+    .terms { font-size: .72rem; color: var(--muted); margin-top: 6px; text-align: center; }
+
+    /* ---------- 4 יתרונות ---------- */
+    .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+    .chip {
+      display: flex; align-items: center; gap: 6px; padding: 8px 10px;
+      background: rgba(7,86,184,.38); border: 1px solid rgba(255,255,255,.2);
+      border-radius: 12px; font-size: .85rem; font-weight: 700;
+    }
+    .chip i {
+      color: var(--yellow); font-style: normal; font-weight: 900;
+      background: rgba(255,212,0,0.16); width: 20px; height: 20px;
+      border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; flex-shrink: 0;
+    }
+
+    /* ---------- כרטיסים משניים (הורים / המלצות / טופס) ---------- */
+    .card {
+      width: 100%;
+      background: rgba(8,38,92,.88);
+      border: 1.5px solid rgba(255,212,0,.32);
+      border-radius: 18px;
+      padding: 12px 14px;
+      overflow: hidden;
+    }
+    .parents h2 { font-size: 0.98rem; font-weight: 900; color: var(--yellow); margin-bottom: 3px; }
+    .parents p { font-size: 0.86rem; color: var(--muted); }
+
+    .reviews[hidden] { display: none; }
+    .reviews h2 { font-size: 1rem; font-weight: 900; color: var(--yellow); margin-bottom: 8px; }
+    .review { padding: 10px; border-radius: 12px; background: rgba(4,20,51,.6); margin-bottom: 8px; }
+    .review q { display: block; font-size: 0.9rem; font-weight: 500; }
+    .review cite { display: block; margin-top: 4px; font-size: .8rem; color: var(--yellow); font-style: normal; font-weight: 700; }
+
+    /* ---------- טופס השארת פרטים ---------- */
+    .form-card { background: rgba(4,20,51,.92); border-color: rgba(255,212,0,.45); position: relative; }
+    .form-card h2 { font-size: 1.05rem; font-weight: 900; color: var(--yellow); text-align: center; margin-bottom: 2px; }
+    .form-sub { text-align: center; font-size: 0.82rem; color: var(--muted); margin-bottom: 10px; }
+    label.field { display: block; margin-bottom: 8px; font-size: .86rem; font-weight: 700; }
+    .input {
+      display: block; width: 100%; margin-top: 3px; padding: 11px 12px;
+      font: 500 16px 'Heebo', Arial, sans-serif;
+      color: #fff; background: rgba(255,255,255,.1);
+      border: 1.5px solid rgba(255,255,255,.32); border-radius: 10px; text-align: right;
+    }
+    .input::placeholder { color: #B8C4D9; }
+    .input:focus { border-color: var(--yellow); background: rgba(255,255,255,.16); outline: none; }
+    .input.invalid { border-color: #ff6b6b; }
+    input[type=tel] { direction: ltr; text-align: right; }
+    .consent { display: flex; gap: 8px; align-items: flex-start; font-size: .78rem; color: var(--muted); margin: 4px 0 10px; font-weight: 400; cursor: pointer; }
+    .consent input { width: 18px; height: 18px; margin-top: 2px; flex-shrink: 0; accent-color: var(--yellow); }
+    .consent a { color: var(--yellow); }
+    .error { min-height: 1.2em; color: #ff9b9b; font-size: .84rem; font-weight: 700; margin-bottom: 4px; text-align: center; }
+    /* מלכודת בוטים ללא היסט פיקסלים שגורם לגלילה אופקית ב-RTL */
+    .hp { display: none !important; }
+    .thanks { display: none; text-align: center; padding: 6px 4px; }
+    .thanks .tick { font-size: 2rem; color: #3ddc84; }
+    .thanks h3 { font-size: 1.1rem; font-weight: 900; margin: 4px 0; color: var(--yellow); }
+    .thanks p { color: var(--muted); margin-bottom: 10px; font-size: 0.88rem; }
+
+    /* ---------- פוטר ---------- */
+    footer { text-align: center; font-size: .8rem; color: var(--muted); padding: 2px 0 12px; }
+    footer a { color: var(--yellow); font-weight: 700; }
+    footer .area { margin-bottom: 2px; font-weight: 700; color: var(--white); }
+    .ltr { direction: ltr; unicode-bidi: embed; }
+
+    /* ---------- סרגל קבוע בתחתית ---------- */
+    .sticky {
+      position: fixed; z-index: 20; inset: auto 0 0 0; width: 100%;
+      padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+      background: rgba(4,20,51,.96); border-top: 1.5px solid rgba(255,212,0,.5);
+      transform: translateY(110%); transition: transform .25s ease;
+    }
+    .sticky.show { transform: translateY(0); }
+    .sticky-inner { max-width: 440px; margin: 0 auto; display: flex; gap: 8px; }
+    .sticky .btn { min-height: 46px; font-size: 0.96rem; }
+    .sticky .btn-wa { flex: 1; }
+    .sticky .call { width: 52px; flex: none; background: var(--yellow); color: var(--navy); font-size: 1.3rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <main class="page">
+
+    <!-- כרטיס הפלאייר המאוחד -->
+    <article class="flyer-card">
+      <div class="hero">
+        <a class="brand-floating" href="tel:0546238888" data-track="call" aria-label="חיוג ישיר למורה לנהיגה 054-623-8888">
+          <img src="assets/logo_header.webp" alt="מורה לנהיגה 054-623-8888" width="700" height="394">
+        </a>
+        <img class="hero-bg" src="assets/hero_car.webp" alt="רכב לימוד נהיגה על כביש מואר" width="702" height="500" fetchpriority="high">
+        <div class="hero-text">
+          <span class="area-pill">📍 באר שבע, נבטים והסביבה</span>
+          <h1>נמאס לבקש טרמפים מההורים?<br><span class="accent">קח את ההגה לידיים!</span></h1>
+        </div>
+      </div>
+
+      <div class="flyer-body">
+        <p class="lead-line">לומדים לנהוג בביטחון ובסבלנות – <strong>בקצב שלך ובלי מריחת שיעורים!</strong></p>
+
+        <!-- הנעה לפעולה מרכזית מעל הקפל -->
+        <div class="cta-group">
+          <a id="heroCta" class="btn btn-wa" data-wa="general" target="_blank" rel="noopener" href="https://wa.me/972546238888">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 2C6.51 2 2.019 6.486 2.019 12c0 1.99.585 3.847 1.6 5.414L2 22.062l4.821-1.574A9.945 9.945 0 0 0 12.031 22c5.52 0 10.012-4.486 10.012-10s-4.492-10-10.012-10zm5.836 14.199c-.244.685-1.42 1.309-1.957 1.391-.537.082-1.218.117-3.957-.962-3.3-1.3-5.385-4.664-5.551-4.882-.164-.218-1.334-1.776-1.334-3.388 0-1.612.846-2.404 1.146-2.73.3-.326.657-.408.876-.408.219 0 .438.002.63.012.203.01.474-.078.74.564.275.666.938 2.296 1.02 2.463.082.167.137.362.027.58-.11.218-.164.354-.326.545-.164.19-.344.425-.492.571-.164.163-.336.34-.144.668.192.328.854 1.408 1.832 2.28 1.258 1.121 2.317 1.468 2.645 1.632.328.164.52.137.712-.082.192-.219.822-.958 1.041-1.286.219-.328.438-.273.74-.164.3.11 1.905.898 2.234 1.062.328.164.548.246.63.382.082.137.082.793-.162 1.478z"/></svg>
+            <span>שלחו הודעה בוואטסאפ לפרטים</span>
+          </a>
+          <a class="btn btn-ghost" href="tel:0546238888" data-track="call">📞 או חייגו עכשיו: <span class="ltr">054-623-8888</span></a>
+        </div>
+
+        <!-- באנר מבצעים: מתנה מוגדלת + 2 שורות -->
+        <section class="offers" aria-label="הטבות ומבצעים">
+          <div class="offers-head">
+            <div class="gift" aria-hidden="true">🎁</div>
+            <div class="offers-head-txt">
+              <h2>הטבות מיוחדות לתלמידים</h2>
+              <span>שתי הטבות שוות לנרשמים עכשיו:</span>
+            </div>
+          </div>
+          <div class="offer">
+            🚗 <strong>חבילת נהיגה מושלמת:</strong> מחיר מיוחד לחבילת לימוד <span class="tag-contact">לפרטים צרו קשר</span>
+          </div>
+          <div class="offer">
+            👥 <strong>מבצע חבר מביא חבר:</strong> נהנים מהנחה מיוחדת לשנה + שיעור נסיעה!
+          </div>
+          <p class="terms">* ההטבות בכפוף לתנאים. לפרטים שלחו הודעה או התקשרו.</p>
+        </section>
+
+        <!-- 4 יתרונות מרכזיים -->
+        <section class="chips" aria-label="למה ללמוד איתי">
+          <div class="chip"><i>✓</i> סבלנות ויחס אישי</div>
+          <div class="chip"><i>✓</i> בלי מריחת שיעורים</div>
+          <div class="chip"><i>✓</i> גמישות בשעות</div>
+          <div class="chip"><i>✓</i> הכנה יסודית לטסט</div>
+        </section>
+      </div>
+    </article>
+
+    <!-- מסר להורים -->
+    <section class="card parents" aria-label="להורים">
+      <h2>🛡️ מילה להורים</h2>
+      <p>בטיחות לפני הכול: ליווי אישי, סבלני ואחראי של הילד שלכם, שקיפות מלאה ועדכון שוטף עד הטסט.</p>
+    </section>
+
+    <!-- המלצות -->
+    <section class="card reviews" id="reviews" hidden aria-label="המלצות">
+      <h2>מה אומרים תלמידים</h2>
+      <div id="reviewsList"></div>
+    </section>
+
+    <!-- טופס לידים מהיר -->
+    <section class="card form-card" id="lead" aria-label="השארת פרטים">
+      <h2>מעדיפים שנחזור אליכם?</h2>
+      <p class="form-sub">השאירו שם וטלפון ונחזור אליכם בהקדם</p>
+      <form id="leadForm" novalidate>
+        <label class="field">שם מלא
+          <input class="input" id="custName" name="name" type="text" autocomplete="name" placeholder="איך קוראים לך?" maxlength="60" required>
+        </label>
+        <label class="field">טלפון נייד
+          <input class="input" id="custPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="05X-XXXXXXX" maxlength="15" required>
+        </label>
+        <div class="hp" aria-hidden="true"><label>אל תמלאו שדה זה<input type="text" id="hpField" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label class="consent">
+          <input type="checkbox" id="consent" checked required>
+          <span>אני מאשר/ת שיחזרו אליי בטלפון או בוואטסאפ בנוגע לשיעורי נהיגה. <a href="privacy.html" target="_blank" rel="noopener">מדיניות פרטיות</a></span>
+        </label>
+        <p class="error" id="formError" role="alert" aria-live="polite"></p>
+        <button type="submit" class="btn btn-yellow" id="submitBtn">שלחו לי פרטים על החבילה והמבצע 👈</button>
+      </form>
+      <div class="thanks" id="thanks" aria-live="polite">
+        <div class="tick" aria-hidden="true">✓</div>
+        <h3 id="thanksTitle"></h3>
+        <p id="thanksText"></p>
+        <a id="thanksWa" class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/972546238888" data-wa="lead">שלחו את הפרטים בוואטסאפ עכשיו</a>
+      </div>
+    </section>
+
+    <footer>
+      <p class="area">לימודי נהיגה בבאר שבע, נבטים והסביבה</p>
+      <p><a href="tel:0546238888" data-track="call" class="ltr">054-623-8888</a> · <a href="privacy.html">מדיניות פרטיות</a></p>
+    </footer>
+  </main>
+
+  <div class="sticky" id="stickyBar">
+    <div class="sticky-inner">
+      <a class="btn btn-wa" data-wa="sticky" target="_blank" rel="noopener" href="https://wa.me/972546238888">וואטסאפ למורה לנהיגה</a>
+      <a class="btn call" href="tel:0546238888" data-track="call" aria-label="חיוג">📞</a>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script>
+  (function () {
+    var C = window.LANDING_CONFIG || {};
+    var $ = function (id) { return document.getElementById(id); };
+
+    var tel = C.phoneTel || '0546238888';
+    document.querySelectorAll('[data-track="call"]').forEach(function (a) {
+      a.href = 'tel:' + tel;
+    });
+
+    var params = new URLSearchParams(location.search), attrib = {};
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid'].forEach(function (k) {
+      var v = params.get(k);
+      try {
+        if (v) sessionStorage.setItem(k, v); else v = sessionStorage.getItem(k);
+      } catch (e) {}
+      if (v) attrib[k] = v;
+    });
+
+    if (C.metaPixelId) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', C.metaPixelId); fbq('track', 'PageView');
+    }
+    if (C.tiktokPixelId) {
+      !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};ttq.load(C.tiktokPixelId);ttq.page()}(window,document,'ttq');
+    }
+    function track(kind) {
+      try {
+        if (window.fbq) fbq('track', kind === 'lead' ? 'Lead' : 'Contact');
+        if (window.ttq) ttq.track(kind === 'lead' ? 'SubmitForm' : 'Contact');
+      } catch (e) {}
+    }
+
+    var num = C.whatsappNumber || '972546238888';
+    function waUrl(text) { return 'https://wa.me/' + num + '?text=' + encodeURIComponent(text); }
+    var generalMsg = 'היי מורן, נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁';
+    document.querySelectorAll('[data-wa="general"],[data-wa="sticky"]').forEach(function (a) { a.href = waUrl(generalMsg); });
+    document.querySelectorAll('[data-wa],[data-track="call"]').forEach(function (a) {
+      a.addEventListener('click', function () { track('contact'); });
+    });
+
+    if (Array.isArray(C.testimonials) && C.testimonials.length) {
+      var list = $('reviewsList');
+      C.testimonials.forEach(function (t) {
+        if (!t || !t.text) return;
+        var d = document.createElement('div'); d.className = 'review';
+        var q = document.createElement('q'); q.textContent = t.text; d.appendChild(q);
+        if (t.name) { var c = document.createElement('cite'); c.textContent = '— ' + t.name; d.appendChild(c); }
+        list.appendChild(d);
+      });
+      if (list.children.length) $('reviews').hidden = false;
+    }
+
+    var bar = $('stickyBar'), ctaOut = false, formIn = false;
+    function syncBar() { bar.classList.toggle('show', ctaOut && !formIn); }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) {
+        ctaOut = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; syncBar();
+      }).observe($('heroCta'));
+      new IntersectionObserver(function (e) { formIn = e[0].isIntersecting; syncBar(); }, { threshold: .25 }).observe($('lead'));
+    } else { bar.classList.add('show'); }
+
+    var form = $('leadForm'), err = $('formError');
+    function normalizePhone(raw) {
+      var d = String(raw || '').replace(/\D/g, '');
+      if (d.indexOf('972') === 0) d = '0' + d.slice(3);
+      return /^05\d{8}$/.test(d) ? d : '';
+    }
+    function showError(msg, el) { err.textContent = msg; if (el) { el.classList.add('invalid'); el.focus(); } }
+    form.addEventListener('input', function (e) { e.target.classList && e.target.classList.remove('invalid'); err.textContent = ''; });
+
+    function showThanks(name, phone, delivered) {
+      form.style.display = 'none';
+      $('thanks').style.display = 'block';
+      $('thanksTitle').textContent = delivered ? 'הפרטים התקבלו בהצלחה!' : 'הפרטים מוכנים לשליחה!';
+      $('thanksText').textContent = delivered
+        ? 'תודה ' + name + ', נחזור אליך בהקדם. רוצה תשובה מיידית? לחץ כאן לשליחה בוואטסאפ:'
+        : 'כדי שהפרטים יגיעו מיד לנייד של המורה, לחצו על הכפתור ושלחו את ההודעה המוכנה בוואטסאפ:';
+      $('thanksWa').href = waUrl('היי מורן, השארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      err.textContent = '';
+      var nameEl = $('custName'), phoneEl = $('custPhone');
+      var name = nameEl.value.trim(), phone = normalizePhone(phoneEl.value);
+      if (name.length < 2) return showError('נא להזין שם מלא', nameEl);
+      if (!phone) return showError('נא להזין מספר נייד תקין (למשל 054-1234567)', phoneEl);
+      if (!$('consent').checked) return showError('נא לאשר יצירת קשר', $('consent'));
+      if ($('hpField').value) return;
+
+      var btn = $('submitBtn'); btn.disabled = true; btn.textContent = 'שולח...';
+      var payload = Object.assign({ name: name, phone: phone, page: location.pathname, ts: new Date().toISOString() }, attrib);
+
+      var send = C.leadEndpoint
+        ? fetch(C.leadEndpoint, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
+            .then(function () { return true; }, function () { return false; })
+        : Promise.resolve(false);
+
+      send.then(function (delivered) {
+        track('lead');
+        showThanks(name, phone, delivered);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
