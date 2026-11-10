@@ -496,8 +496,13 @@
       var payload = Object.assign({ name: name, phone: phone, page: location.pathname, ts: new Date().toISOString() }, attrib);
 
       var send = C.leadEndpoint
-        ? fetch(C.leadEndpoint, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
-            .then(function () { return true; }, function () { return false; })
+        ? fetch(C.leadEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          })
+            .then(function (res) { return res.ok; })
+            .catch(function () { return false; })
         : Promise.resolve(false);
 
       send.then(function (delivered) {

@@ -7,9 +7,8 @@ window.LANDING_CONFIG = {
   whatsappNumber: '972546238888',
   phoneTel: '0546238888',
 
-  // כתובת Web App של Google Apps Script (ראה SETUP.md).
-  // כל עוד השדה ריק, הטופס לא שולח לשום מקום אלא מציג כפתור וואטסאפ עם הפרטים מוכנים.
-  leadEndpoint: 'https://script.google.com/macros/s/AKfycbwzSJAARnMAE8Am51ScB1UCZG1LmB598pZ7zuLYS63AsivckDhFACE02wGRIHQ_V2_I/exec',
+  // כתובת ה-API של ה-CRM ב-Railway (שרת בדיקות Testing)
+  leadEndpoint: 'https://web-crm-production-9064.up.railway.app/api/leads',
 
   // מזהי פיקסלים לקמפיין הממומן. ריק = לא נטען.
   metaPixelId: '',
