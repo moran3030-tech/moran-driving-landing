@@ -1,5 +1,25 @@
 :{$PORT:80} {
     root * /usr/share/caddy
+
+    # 301 Redirect duplicate railway service domain to canonical lp subdomain
+    @notPrimaryHost {
+        not host lp.moran-drive.co.il localhost 127.0.0.1
+    }
+    redir @notPrimaryHost https://lp.moran-drive.co.il{uri} permanent
+
+    # Block sensitive system files and markdown documentation
+    @blocked {
+        path /.* *.md /Dockerfile /Caddyfile
+    }
+    respond @blocked 404
+
     file_server
     try_files {path} {path}.html /index.html
+
+    header {
+        X-Frame-Options "DENY"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    }
 }
