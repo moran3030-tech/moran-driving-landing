@@ -11,7 +11,7 @@ window.LANDING_CONFIG = {
   leadEndpoint: 'https://web-crm-production-9064.up.railway.app/api/leads',
 
   // מזהי פיקסלים לקמפיין הממומן. ריק = לא נטען.
-  metaPixelId: '',
+  metaPixelId: '3223605754505904',
   tiktokPixelId: '',
 
   // המלצות אמיתיות בלבד! כל עוד המערך ריק, אזור ההמלצות לא מוצג בדף.
