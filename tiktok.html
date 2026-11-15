@@ -107,6 +107,12 @@
       overflow: hidden;
     }
     .form-card { background: rgba(4,20,51,.92); border-color: rgba(255,212,0,.45); position: relative; }
+    .form-logo {
+      width: 112px;
+      margin: 0 auto 8px;
+      filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.95)) drop-shadow(0 2px 5px rgba(255, 255, 255, 0.75));
+    }
+    .form-logo img { width: 100%; height: auto; object-fit: contain; }
     .form-card h1 { font-size: 1.05rem; font-weight: 900; color: var(--yellow); text-align: center; margin-bottom: 2px; }
     .form-sub { text-align: center; font-size: 0.82rem; color: var(--muted); margin-bottom: 10px; }
     label.field { display: block; margin-bottom: 8px; font-size: .86rem; font-weight: 700; }
@@ -148,6 +154,9 @@
   <main class="page">
     <!-- טופס לידים מהיר -->
     <section class="card form-card" id="lead" aria-label="השארת פרטים">
+      <div class="form-logo">
+        <img src="assets/logo_header.webp" alt="מורן כובאני - מורה לנהיגה 054-623-8888" width="700" height="394">
+      </div>
       <h1>מעדיפים שנחזור אליכם?</h1>
       <p class="form-sub">השאירו שם וטלפון ונחזור אליכם בהקדם</p>
       <form id="leadForm" novalidate>
