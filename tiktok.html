@@ -155,7 +155,7 @@
     <!-- טופס לידים מהיר -->
     <section class="card form-card" id="lead" aria-label="השארת פרטים">
       <div class="form-logo">
-        <img src="assets/logo_header.webp" alt="מורן כובאני - מורה לנהיגה 054-623-8888" width="700" height="394">
+        <img src="assets/logo_header.webp" alt="מורן דרייב | מורן קובני - מורה לנהיגה 054-623-8888" width="700" height="394">
       </div>
       <h1>מעדיפים שנחזור אליכם?</h1>
       <p class="form-sub">השאירו שם וטלפון ונחזור אליכם בהקדם</p>
@@ -172,7 +172,7 @@
           <span>אני מאשר/ת שיחזרו אליי בטלפון או בוואטסאפ בנוגע לשיעורי נהיגה. <a href="privacy.html" target="_blank" rel="noopener">מדיניות פרטיות</a></span>
         </label>
         <p class="error" id="formError" role="alert" aria-live="polite"></p>
-        <button type="submit" class="btn btn-yellow" id="submitBtn">שלחו לי פרטים על החבילה והמבצע 👈</button>
+        <button type="submit" class="btn btn-yellow" id="submitBtn">לקבלת פרטים</button>
       </form>
       <div class="thanks" id="thanks" aria-live="polite">
         <div class="tick" aria-hidden="true">✓</div>
@@ -264,7 +264,7 @@
       $('thanksText').textContent = delivered
         ? 'תודה ' + name + ', נחזור אליך בהקדם. רוצה תשובה מיידית? לחץ כאן לשליחה בוואטסאפ:'
         : 'כדי שהפרטים יגיעו מיד לנייד של המורה, לחצו על הכפתור ושלחו את ההודעה המוכנה בוואטסאפ:';
-      $('thanksWa').href = waUrl('היי מורן, הגעתי מטיקטוק והשארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁');
+      $('thanksWa').href = waUrl('היי מורן, הגעתי מטיקטוק והשארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח שתחזור אליי לפרטים על שיעורי נהיגה');
     }
 
     form.addEventListener('submit', function (e) {
