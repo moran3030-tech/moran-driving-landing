@@ -17,8 +17,8 @@
   <meta property="og:description" content="חבילת נהיגה מושלמת ומבצע חבר מביא חבר (+ שיעור נסיעה). מורה לנהיגה בבאר שבע, נבטים והסביבה – 054-623-8888.">
   <meta property="og:image" content="https://lp.moran-drive.co.il/assets/hero_car.webp">
 
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preload" as="image" href="assets/hero_car.webp">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="preload" as="image" href="/assets/hero_car.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
     img, svg { max-width: 100%; display: block; }
     .bg {
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background: var(--navy-deep) url('assets/bg_ambient.webp') center/cover no-repeat;
+      background: var(--navy-deep) url('/assets/bg_ambient.webp') center/cover no-repeat;
     }
     .bg::after {
       content: ''; position: absolute; inset: 0;
@@ -302,9 +302,9 @@
     <article class="flyer-card">
       <div class="hero">
         <a class="brand-floating" href="tel:0546238888" data-track="call" aria-label="חיוג ישיר למורה לנהיגה 054-623-8888">
-          <img src="assets/logo_header.webp" alt="מורה לנהיגה 054-623-8888" width="700" height="394">
+          <img src="/assets/logo_header.webp" alt="מורה לנהיגה 054-623-8888" width="700" height="394">
         </a>
-        <img class="hero-bg" src="assets/hero_car.webp" alt="רכב לימוד נהיגה על כביש מואר" width="702" height="500" fetchpriority="high">
+        <img class="hero-bg" src="/assets/hero_car.webp" alt="רכב לימוד נהיגה על כביש מואר" width="702" height="500" fetchpriority="high">
         <div class="hero-text">
           <span class="area-pill">📍 באר שבע, נבטים והסביבה</span>
           <h1>נמאס לבקש טרמפים מההורים?<br><span class="accent">קח את ההגה לידיים!</span></h1>
@@ -377,7 +377,7 @@
         <div class="hp" aria-hidden="true"><label>אל תמלאו שדה זה<input type="text" id="hpField" name="website" tabindex="-1" autocomplete="off"></label></div>
         <label class="consent">
           <input type="checkbox" id="consent" checked required>
-          <span>אני מאשר/ת שיחזרו אליי בטלפון או בוואטסאפ בנוגע לשיעורי נהיגה. <a href="privacy.html" target="_blank" rel="noopener">מדיניות פרטיות</a></span>
+          <span>אני מאשר/ת שיחזרו אליי בטלפון או בוואטסאפ בנוגע לשיעורי נהיגה. <a href="/privacy.html" target="_blank" rel="noopener">מדיניות פרטיות</a></span>
         </label>
         <p class="error" id="formError" role="alert" aria-live="polite"></p>
         <button type="submit" class="btn btn-yellow" id="submitBtn">שלחו לי פרטים על החבילה והמבצע 👈</button>
@@ -392,7 +392,7 @@
 
     <footer>
       <p class="area">לימודי נהיגה בבאר שבע, נבטים והסביבה</p>
-      <p><a href="tel:0546238888" data-track="call" class="ltr">054-623-8888</a> · <a href="privacy.html">מדיניות פרטיות</a></p>
+      <p><a href="tel:0546238888" data-track="call" class="ltr">054-623-8888</a> · <a href="/privacy.html">מדיניות פרטיות</a> · <a href="/accessibility.html">הצהרת נגישות</a></p>
     </footer>
   </main>
 
@@ -403,7 +403,7 @@
     </div>
   </div>
 
-  <script src="config.js"></script>
+  <script src="/config.js"></script>
   <script>
   (function () {
     var C = window.LANDING_CONFIG || {};
@@ -414,6 +414,41 @@
       a.href = 'tel:' + tel;
     });
 
+    var ORGANIC_ROUTES = {
+      '/tt': {
+        leadSource: '🎵 טיקטוק אורגני',
+        source: '🎵 טיקטוק אורגני',
+        utm_source: 'tiktok_organic',
+        utm_medium: 'organic_social',
+        generalWaText: 'היי מורן, הגעתי מהטיקטוק שלך 👋 נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁',
+        thanksWaText: function (name, phone) {
+          return 'היי מורן, הגעתי מהטיקטוק שלך והשארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁';
+        }
+      },
+      '/fb': {
+        leadSource: '📘 פייסבוק אורגני',
+        source: '📘 פייסבוק אורגני',
+        utm_source: 'facebook_organic',
+        utm_medium: 'organic_social',
+        generalWaText: 'היי מורן, הגעתי מהפייסבוק 👋 נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁',
+        thanksWaText: function (name, phone) {
+          return 'היי מורן, ראיתי את הפוסט שלך בפייסבוק והשארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁';
+        }
+      },
+      '/ig': {
+        leadSource: '📸 אינסטגרם אורגני',
+        source: '📸 אינסטגרם אורגני',
+        utm_source: 'instagram_organic',
+        utm_medium: 'organic_social',
+        generalWaText: 'היי מורן, הגעתי מהאינסטגרם 👋 נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁',
+        thanksWaText: function (name, phone) {
+          return 'היי מורן, הגעתי מהאינסטגרם שלך והשארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁';
+        }
+      }
+    };
+    var normalizedPath = (location.pathname || '/').toLowerCase().replace(/\/+$/, '') || '/';
+    var routeMeta = Object.prototype.hasOwnProperty.call(ORGANIC_ROUTES, normalizedPath) ? ORGANIC_ROUTES[normalizedPath] : null;
+
     var params = new URLSearchParams(location.search), attrib = {};
     ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid'].forEach(function (k) {
       var v = params.get(k);
@@ -422,6 +457,12 @@
       } catch (e) {}
       if (v) attrib[k] = v;
     });
+    if (routeMeta) {
+      attrib.leadSource = routeMeta.leadSource;
+      attrib.source = routeMeta.source;
+      attrib.utm_source = attrib.utm_source || routeMeta.utm_source;
+      attrib.utm_medium = attrib.utm_medium || routeMeta.utm_medium;
+    }
 
     if (C.metaPixelId) {
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -439,7 +480,9 @@
 
     var num = C.whatsappNumber || '972546238888';
     function waUrl(text) { return 'https://wa.me/' + num + '?text=' + encodeURIComponent(text); }
-    var generalMsg = 'היי מורן, נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁';
+    var generalMsg = routeMeta
+      ? routeMeta.generalWaText
+      : 'היי מורן, נמאס לי לבקש טרמפים מההורים! אשמח לפרטים על חבילת נהיגה מושלמת ועל מבצע חבר מביא חבר 🎁';
     document.querySelectorAll('[data-wa="general"],[data-wa="sticky"]').forEach(function (a) { a.href = waUrl(generalMsg); });
     document.querySelectorAll('[data-wa],[data-track="call"]').forEach(function (a) {
       a.addEventListener('click', function () { track('contact'); });
@@ -482,7 +525,10 @@
       $('thanksText').textContent = delivered
         ? 'תודה ' + name + ', נחזור אליך בהקדם. רוצה תשובה מיידית? לחץ כאן לשליחה בוואטסאפ:'
         : 'כדי שהפרטים יגיעו מיד לנייד של המורה, לחצו על הכפתור ושלחו את ההודעה המוכנה בוואטסאפ:';
-      $('thanksWa').href = waUrl('היי מורן, השארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁');
+      var thanksMsg = routeMeta
+        ? routeMeta.thanksWaText(name, phone)
+        : 'היי מורן, השארתי פרטים בדף הנחיתה: ' + name + ' (' + phone + '). אשמח לפרטים על חבילת נהיגה מושלמת ומבצע חבר מביא חבר 🎁';
+      $('thanksWa').href = waUrl(thanksMsg);
     }
 
     form.addEventListener('submit', function (e) {
