@@ -13,6 +13,15 @@
     }
     respond @blocked 404
 
+    # 301 Redirect trailing slashes on organic social landing pages (preserving query params)
+    @organicSlash {
+        path /fb/ /ig/ /tt/
+    }
+    route @organicSlash {
+        uri strip_suffix /
+        redir {uri} permanent
+    }
+
     file_server
     try_files {path} {path}.html /index.html
 
